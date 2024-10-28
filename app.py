@@ -12,6 +12,7 @@ from sklearn.model_selection import train_test_split
 # Download required NLTK data
 try:
     nltk.data.find('tokenizers/punkt')
+    nltk.data.find('tokenizers/punkt_tab')
     nltk.data.find('corpora/stopwords')
 except LookupError:
     nltk.download('punkt')
